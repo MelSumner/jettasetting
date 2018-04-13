@@ -7,6 +7,11 @@ const Router = EmberRouter.extend({
 });
 
 Router.map(function() {
+  this.route('about', function() {
+    this.route('jettasetting');
+    this.route('meet-jetta');
+  });
+  this.route('blog');
 });
 
 export default Router;
